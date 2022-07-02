@@ -2,7 +2,7 @@ public class Calculation {
 
     public  static int Calculation(int x, int y, String sign){
         int result = -1000000000;
-        if(x>10 & y>10 & x<1 & y<1){
+        if(x>10 || y>10|| x<1 || y<1){
             throw new IllegalArgumentException("Недопустимые значения");
         }
         switch (sign){
